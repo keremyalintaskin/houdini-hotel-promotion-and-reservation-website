@@ -1,2 +1,14 @@
-# houdini-hotel-promotion-and-reservation-website
-The Houdini Hotel Promotion and Reservation Website is a platform that simplifies hotel bookings and promotion management. Users can explore hotel packages, check room availability in real-time, and make reservations easily. Additionally, hotels can create and manage promotions.
+# Houdini Otel Promosyon ve Rezervasyon Websitesi
+
+Houdini Otel Promosyon ve Rezervasyon Websitesi, otel rezervasyonlarını ve promosyon yönetimini kolaylaştıran bir platformdur. Kullanıcılar, otel paketlerini keşfedebilir, oda müsaitliğini kontrol edebilir ve kolayca rezervasyon yapabilirler. Oteller promosyonlar oluşturup yönetebilir.
+
+## Özellikler
+
+- Odalarımız hakkında bilgi alabilme
+- Kolay rezervasyon yapma
+- Otel odalarını keşfetme
+- Otel ile iletişime geçebilme
+
+## Teknolojiler
+
+- HTML, CSS, JavaScript
