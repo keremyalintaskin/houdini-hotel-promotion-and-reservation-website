@@ -1,0 +1,287 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+   <head>
+   
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+      <title>Houdini</title>
+      <link rel="icon" href="images/icon.ico" type="image/x-icon" />
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+      <link rel="stylesheet" href="css/style.css">
+ 
+      <link rel="stylesheet" href="css/responsive.css">
+
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+     
+   </head>
+   <body class="main-layout">
+
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <div class="modal fade" id="logIn" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog"> 
+            <div class="modal-content"> 
+               <div class="modal-body"> 
+               <div class="text-right"> 
+               </div> 
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12 col-md-offset-4">
+                        <div class="account-box">
+                              <div class="logo ">
+                                 <img src="images/logo.png" alt=""/>
+                              </div>
+                              <br>
+                              <form class="form-signin" action="#">
+                              <div class="form-group">
+                                 <input type="text" class="form-control" placeholder="E-mail" required autofocus />
+                              </div>
+                              <div class="form-group">
+                                 <input type="password" class="form-control" placeholder="Şifre" required />
+                              </div>
+                              <div class="form-group" id = "pass" style="display: none;">
+                                 <input type="password" class="form-control" placeholder="Şifre" required />
+                              </div>
+                              <label class="checkbox" id="flag2">
+                                 <input type="checkbox" value="remember-me" />
+                                 Beni hatırla
+                              </label>
+                              <button onclick="changeColor()" class="btn btn-lg btn-block btn-success" id="flag" type="submit">
+                                Hesap oluştur
+                                 </button>
+                              </form>
+                              <a class="forgotLnk" href="forgotPassword.html">Şifreni mi unuttun ?</a>
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+      
+                     </div> 
+                  </div> 
+               </div>
+               </div>
+               <script>
+                     const passw = document.getElementById('pass')
+                     const btn = document.getElementById('flag');
+                     const remember = document.getElementById('flag2')
+                     btn.addEventListener('click', function handleClick() {
+                        if (btn.style.backgroundColor != "green"){
+                           btn.textContent = 'Hesap oluştur';
+                           btn.style.backgroundColor = "green";
+                           remember.style.display = "block";
+                           passw.style.display = "none";
+                        }
+                        else{
+                           btn.textContent = 'Giriş yap';
+                           btn.style.backgroundColor = "blue";
+                           remember.style.display = "none";
+                          
+                           passw.style.display = "block";
+                        }
+                        })
+                    
+              </script>
+               <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+               <script type='text/javascript' src='#'></script>
+               <script type='text/javascript' src='#'></script>
+               <script type='text/javascript' src='#'></script>
+               <script type='text/javascript' src='#'></script>
+               <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+               myLink.addEventListener('click', function(e) {
+                  e.preventDefault();
+               });</script>
+      <header>
+
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="index.html">Anasayfa</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">Hakkında</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="room.html">Odalarımız</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="gallery.html">Galeri</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="blog.html">Blog</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html">İletişim</a>
+                              </li>
+                         
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+   
+        <div class="back_re">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                      <h2>Blog</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div  class="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Blog</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="images/blog1.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Yatak odası</h3>
+                       
+                        <p>Odanın açıklaması kısmı...</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="images/blog2.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Yatak odası</h3>
+                        
+                        <p>Odanın açıklaması kısmı...</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="images/blog3.jpg" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Yatak odası</h3>
+                        
+                        <p>Odanın açıklaması kısmı...</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class=" col-md-4">
+                     <h3>İletişim</h3>
+                     <ul class="conta">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="https://www.google.com/maps/place/K%C4%B1rklareli+%C3%9Cniversitesi+Kayal%C4%B1+Kamp%C3%BCs%C3%BC/@41.7915194,26.1087207,9z/data=!4m10!1m2!2m1!1sk%C4%B1rklareli+%C3%BCniversitesi!3m6!1s0x40a751c029a3f993:0x147975a210b64bce!8m2!3d41.7915194!4d27.1634082!15sChlrxLFya2xhcmVsaSDDvG5pdmVyc2l0ZXNpIgOIAQGSAQp1bml2ZXJzaXR54AEA!16s%2Fg%2F1q6n2kn8l">Adres</a></li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> +90 533 255 9365</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> ylntskn169@hotmail.com</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <h3>Menü</h3>
+                     <ul class="link_menu">
+                        <li><a href="#">Anasayfa</a></li>
+                        <li><a href="about.html"> Hakkında</a></li>
+                        <li><a href="room.html">Odalarımız</a></li>
+                        <li><a href="gallery.html">Galeri</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li><a type="button" class="text-white" data-toggle="modal" data-target="#logIn">Giriş yap</a></li>
+                        
+                  </div>
+                  <div class="col-md-4">
+                     <h3>Yeni haberler için;</h3>
+                     <form class="bottom_form">
+                        <input class="enter" placeholder="E-mail" type="text" name="Enter your email">
+                        <button class="sub_btn">abone ol</button>
+                     </form>
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        
+                        <p>
+                           © 2023 All Rights Reserved. Design by Houdini</a>
+                           <br><br>
+                           Distributed by Houdini</a>
+                        </p>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      
+ 
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   
+  
+   </body>
+</html>
